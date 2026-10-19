@@ -72,7 +72,7 @@ h1, h2, h3, .logo { font-family: 'Space Grotesk', sans-serif; }
 .ocean-wave-front { fill: var(--wave-front); animation: ocean-wave-drift 32s ease-in-out -13s infinite alternate; transition: fill 1500ms ease-in-out; }
 .site-intro-overlay { position: fixed; inset: 0; z-index: 500; display: grid; place-items: center; overflow: hidden; }
 .site-intro-overlay::before { position: absolute; inset: 0; background: var(--bg); content: ""; animation: intro-curtain 2700ms ease-in-out both; }
-.site-intro-logo { position: relative; z-index: 1; color: var(--text); font-family: 'Space Grotesk', sans-serif; font-size: clamp(3.5rem, 11vw, 7rem); font-weight: 700; letter-spacing: -.08em; line-height: 1; }
+.site-intro-logo { position: relative; z-index: 1; color: var(--text); font-family: 'Space Grotesk', sans-serif; font-size: clamp(3.5rem, 11vw, 7rem); font-weight: 700; letter-spacing: -.015em; line-height: 1; }
 .site-intro-logo span { color: var(--primary); }
 body.page-loading .navbar,
 body.page-loading main,
