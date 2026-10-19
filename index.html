@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Francis Ernest S. Horlador - Aspiring Software Developer and QA Intern">
+    <title>Francis Horlador | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="page-loading">
+
+    <div class="ocean-waves" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="none">
+            <path class="ocean-wave ocean-wave-back"
+                d="M0 430 C180 360 300 500 500 445 S830 360 1030 438 S1300 500 1440 405 V900 H0 Z">
+            </path>
+            <path class="ocean-wave ocean-wave-middle"
+                d="M0 555 C170 480 335 620 530 555 S850 470 1030 555 S1290 625 1440 520 V900 H0 Z">
+            </path>
+            <path class="ocean-wave ocean-wave-front"
+                d="M0 680 C190 600 330 735 540 670 S850 590 1040 675 S1290 740 1440 645 V900 H0 Z">
+            </path>
+        </svg>
+    </div>
+
+    <div class="site-intro-overlay" id="siteIntro" aria-hidden="true">
+        <span class="site-intro-logo">PRI<span>M</span></span>
+    </div>
+
+    <!-- Theme transition glow effects -->
+    <div class="smoke-layer" id="smokeLayer" aria-hidden="true">
+        <span class="theme-effect-dark-glow"></span>
+        <span class="theme-effect-light-glow"></span>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">PRI<span>M</span></a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="theme-toggle" id="themeToggle"
+                aria-label="Switch to dark mode" aria-pressed="false"
+                title="Switch to dark mode">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    ASPIRING SOFTWARE DEVELOPER
+                </p>
+
+                <h1>
+                    Hi, I'm <span class="gradient-text">Francis.</span>
+                    <br>
+                    I build things for the web.
+                </h1>
+
+                <p class="hero-description">
+                    Passionate about exploring technology, mastering new
+                    tools, and understanding how systems work. Driven by
+                    curiosity, adaptability, and a commitment to continuous
+                    learning.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/FrancisHorlador"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:francis.horlador14@gmail.com"
+                        aria-label="Gmail">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="https://www.facebook.com/francisernest.horlador"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kaide_clrk?utm_source=qr"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="hero-visual">
+                <div class="profile-frame" role="img" aria-label="Portrait of Francis Horlador">
+                    <span class="dizzy-stars" aria-hidden="true">
+                        <span class="dizzy-stars-orbit">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </span>
+                    <img class="profile-image-layer is-active"
+                        src="assets/profile/LookingAtCamera.png"
+                        alt="" aria-hidden="true">
+                    <img class="profile-image-layer"
+                        src="assets/profile/LookingAtCamera.png"
+                        alt="" aria-hidden="true">
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About <span class="gradient-text">Me</span></h2>
+            </div>
+
+            <div class="about-content reveal">
+                <div class="about-sidebar">
+                    <div class="about-label">
+                        <span>INTRODUCTION</span>
+                    </div>
+
+                    <article class="about-highlight">
+                        <div class="about-highlight-icon" aria-hidden="true">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+                        <p class="about-highlight-label">CURRENT PROJECT ROLE</p>
+                        <h3>Project Manager</h3>
+                        <p class="about-highlight-project">AuGGREGATES CRM</p>
+                        <div class="about-highlight-details">
+                            <span>4-member team</span>
+                            <span>Agile workflow</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="about-text">
+                    <h3>Learning today.<br>Building for tomorrow.</h3>
+                    <p>
+                        I'm Francis Ernest S. Horlador, a Bachelor of Science
+                        in Computer Science student at STI College San Jose
+                        Del Monte. I'm interested in software development,
+                        quality assurance, and the process of turning ideas
+                        into working systems.
+                    </p>
+                    <p>
+                        As the Project Manager of our academic thesis project,
+                        AuGGREGATES CRM, I coordinate a four-member team,
+                        monitor deliverables, participate in requirements
+                        analysis, and help coordinate software testing using
+                        Agile methodology.
+                    </p>
+
+                    <a href="#contact" class="text-link">
+                        Let's connect
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">WHAT I BRING</p>
+                <h2>My <span class="gradient-text">Skills</span></h2>
+                <p class="section-description">
+                    Tools and skills I'm developing through coursework
+                    and hands-on projects.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>C#</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-vial-circle-check"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <div class="skill-tags">
+                        <span>Manual Testing</span>
+                        <span>Bug Tracking</span>
+                        <span>Documentation</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3>Project & Analysis</h3>
+                    <div class="skill-tags">
+                        <span>Agile</span>
+                        <span>SDLC</span>
+                        <span>Requirements Analysis</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3>Design & UI/UX</h3>
+                    <div class="skill-tags">
+                        <span>Figma</span>
+                        <span>Canva</span>
+                        <span>UI/UX Design</span>
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                    </div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Hardware & Troubleshooting</h3>
+                    <div class="skill-tags">
+                        <span>PC Assembly</span>
+                        <span>Computer Troubleshooting</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">SELECTED WORK</p>
+                <h2>Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-description">
+                    Projects that reflect my learning, collaboration,
+                    and problem-solving experience.
+                </p>
+            </div>
+
+            <div class="project-team-row">
+                <article class="project-card reveal">
+                    <a class="project-visual project-visual-link"
+                        href="https://www.auggregates-crm.com/"
+                        target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit the AuGGREGATES CRM project">
+                        <div class="project-window">
+                            <div class="window-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="project-mockup">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <span><span class="gold-accent">Au</span>GGREGATES CRM</span>
+                                <p class="project-mockup-title">AUGGREGATES CRM: WEB-BASED EXPENSE, QUOTATION, AND AI-ASSISTANT SYSTEM WITH INTERNAL-WEBSITE FOR IGME GOLDEN EMBANKMENT SUPPLY</p>
+                                <div class="mockup-line"></div>
+                                <div class="mockup-line short"></div>
+                                <div class="mockup-blocks">
+                                    <span></span><span></span><span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="project-info">
+                        <p class="project-category">ACADEMIC THESIS · PROJECT MANAGER</p>
+                        <h3>
+                            <a href="https://www.auggregates-crm.com/"
+                                target="_blank" rel="noopener noreferrer">
+                                <span class="gold-accent">Au</span>GGREGATES CRM
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </h3>
+                        <p>
+                            A web-based expense and quotation management system
+                            with an AI assistant for IGME Golden Embankment Supply.
+                        </p>
+                        <p>
+                            I lead a four-member team, coordinate tasks and
+                            deliverables, support requirements analysis and
+                            system design, and coordinate testing activities
+                            throughout the software development lifecycle.
+                        </p>
+                        <div class="project-tags">
+                            <span>Agile</span>
+                            <span>Figma</span>
+                            <span>Requirements Analysis</span>
+                            <span>QA Coordination</span>
+                        </div>
+                        <a class="btn btn-secondary project-link"
+                            href="https://www.auggregates-crm.com/"
+                            target="_blank" rel="noopener noreferrer">
+                            Visit project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <figure class="team-photo-carousel reveal" id="teamPhotoCarousel"
+                    aria-label="Team photos">
+                    <div class="team-photo-stage">
+                        <img class="team-photo-slide is-active"
+                            src="assets/team/team-photo-1.png"
+                            alt="The team standing together in the consultation area"
+                            aria-hidden="false">
+                        <img class="team-photo-slide"
+                            src="assets/team/team-photo-2.png"
+                            alt="The team sharing a candid moment while reviewing notes"
+                            aria-hidden="true">
+                        <img class="team-photo-slide"
+                            src="assets/team/team-photo-3.png"
+                            alt="A team selfie in the classroom"
+                            aria-hidden="true">
+                        <div class="team-photo-pagination" role="group"
+                            aria-label="Choose a team photo">
+                            <button class="team-photo-dot is-active" type="button"
+                                aria-label="Show team photo 1" aria-pressed="true"></button>
+                            <button class="team-photo-dot" type="button"
+                                aria-label="Show team photo 2" aria-pressed="false"></button>
+                            <button class="team-photo-dot" type="button"
+                                aria-label="Show team photo 3" aria-pressed="false"></button>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+
+            <article class="project-card reveal">
+                <a class="project-visual project-visual-link prototype-visual"
+                    href="https://www.figma.com/proto/ocenvmX5v1qzVDjAl4u9PO/PRIM-ACCESSORIES?node-id=2-2&amp;starting-point-node-id=2%3A2&amp;t=WBRAjtstTeRUffeB-1"
+                    target="_blank" rel="noopener noreferrer"
+                    aria-label="Open the PRIM ACCESSORIES Figma prototype">
+                    <div class="prototype-placeholder">
+                        <i class="fa-brands fa-figma" aria-hidden="true"></i>
+                        <span>PRIM ACCESSORIES</span>
+                        <small>Figma · UI/UX Design</small>
+                    </div>
+                </a>
+
+                <div class="project-info">
+                    <p class="project-category">UI/UX DESIGN</p>
+                    <h3>
+                        <a href="https://www.figma.com/proto/ocenvmX5v1qzVDjAl4u9PO/PRIM-ACCESSORIES?node-id=2-2&amp;starting-point-node-id=2%3A2&amp;t=WBRAjtstTeRUffeB-1"
+                            target="_blank" rel="noopener noreferrer">
+                            PRIM ACCESSORIES
+                            <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        </a>
+                    </h3>
+                    <p>
+                        An interface design prototype created for a Human-Computer
+                        Interaction project, demonstrating user interface design
+                        and prototyping skills.
+                    </p>
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI/UX Design</span>
+                        <span>Wireframing</span>
+                        <span>Prototyping</span>
+                    </div>
+                    <a class="btn btn-secondary project-link"
+                        href="https://www.figma.com/proto/ocenvmX5v1qzVDjAl4u9PO/PRIM-ACCESSORIES?node-id=2-2&amp;starting-point-node-id=2%3A2&amp;t=WBRAjtstTeRUffeB-1"
+                        target="_blank" rel="noopener noreferrer">
+                        View Prototype <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </article>
+
+            <div class="project-note reveal">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>
+                    More projects will be added as I continue learning
+                    and building.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="contact-card reveal">
+                <p class="eyebrow">HAVE AN OPPORTUNITY?</p>
+                <h2>Let's create something <span class="gradient-text">great.</span></h2>
+                <p>
+                    I'm open to internship opportunities where I can learn
+                    from experienced professionals and contribute to a team.
+                </p>
+
+                <div class="contact-options" aria-label="Choose an email service">
+                    <a class="btn btn-primary"
+                        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=francis.horlador14%40gmail.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-google" aria-hidden="true"></i>
+                        Gmail
+                    </a>
+                    <a class="btn btn-secondary"
+                        href="https://outlook.office.com/mail/deeplink/compose?to=francis.horlador14%40gmail.com"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-microsoft" aria-hidden="true"></i>
+                        Outlook
+                    </a>
+                </div>
+
+                <div class="contact-details">
+                    <a href="mailto:francis.horlador14@gmail.com">
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        francis.horlador14@gmail.com
+                    </a>
+                    <a href="tel:+639694132095">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        09694132095
+                    </a>
+                    <a href="https://linkedin.com/in/FrancisHorlador"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                        LinkedIn Profile
+                    </a>
+                    <a href="https://www.facebook.com/francisernest.horlador"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/kaide_clrk?utm_source=qr"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">PRI<span>M</span></a>
+        <p>Designed & built by Francis Horlador</p>
+        <p class="copyright">© <span id="currentYear"></span> All rights reserved.</p>
+    </footer>
+
+    <button class="scroll-progress" id="scrollProgress"
+        type="button" aria-label="Scroll back to top" aria-hidden="true"
+        tabindex="-1">
+        <span class="scroll-progress-track" aria-hidden="true">
+            <i class="fa-solid fa-arrow-up"></i>
+        </span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
